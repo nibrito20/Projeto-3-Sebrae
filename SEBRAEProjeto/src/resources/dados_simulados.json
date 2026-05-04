@@ -1,0 +1,111 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Ana Lima",
+      "email": "ana.lima@email.com",
+      "idade": 34,
+      "dataCadastro": "2024-01-10",
+      "ultimoAcesso": "2026-05-03",
+      "diasDesdeUltimoAcesso": 1,
+      "totalSessoesUltimos30Dias": 18,
+      "tempoMedioSessaoMinutos": 12,
+      "streakDiasConsecutivos": 5
+    },
+    {
+      "id": 2,
+      "nome": "Carlos Mendes",
+      "email": "carlos.m@email.com",
+      "idade": 45,
+      "dataCadastro": "2023-08-22",
+      "ultimoAcesso": "2026-02-10",
+      "diasDesdeUltimoAcesso": 83,
+      "totalSessoesUltimos30Dias": 1,
+      "tempoMedioSessaoMinutos": 3,
+      "streakDiasConsecutivos": 0
+    },
+    {
+      "id": 3,
+      "nome": "Beatriz Souza",
+      "email": "bea.souza@email.com",
+      "idade": 28,
+      "dataCadastro": "2025-03-15",
+      "ultimoAcesso": "2026-05-04",
+      "diasDesdeUltimoAcesso": 0,
+      "totalSessoesUltimos30Dias": 25,
+      "tempoMedioSessaoMinutos": 20,
+      "streakDiasConsecutivos": 12
+    },
+    {
+      "id": 4,
+      "nome": "Roberto Alves",
+      "email": "roberto.a@email.com",
+      "idade": 52,
+      "dataCadastro": "2024-11-01",
+      "ultimoAcesso": "2025-11-30",
+      "diasDesdeUltimoAcesso": 155,
+      "totalSessoesUltimos30Dias": 0,
+      "tempoMedioSessaoMinutos": 0,
+      "streakDiasConsecutivos": 0
+    }
+  ],
+   
+   
+   "servicos": [
+     {
+       "id": 201,
+       "nome": "Curso de Gestão Financeira",
+       "categoria": "curso",
+       "totalIniciados": 500,
+       "totalConcluidos": 220,
+       "totalAbandonados": 280,
+       "tempoMedioMinutos": 45,
+       "avaliacaoImplicita": "media"
+     },
+     {
+       "id": 202,
+       "nome": "Consultoria Empresarial",
+       "categoria": "consultoria",
+       "totalIniciados": 300,
+       "totalConcluidos": 80,
+       "totalAbandonados": 220,
+       "tempoMedioMinutos": 30,
+       "avaliacaoImplicita": "baixa"
+     },
+     {
+       "id": 203,
+       "nome": "Curso de Marketing Digital",
+       "categoria": "curso",
+       "totalIniciados": 420,
+       "totalConcluidos": 390,
+       "totalAbandonados": 30,
+       "tempoMedioMinutos": 38,
+       "avaliacaoImplicita": "alta"
+     },
+     {
+       "id": 204,
+       "nome": "Mentoria Individual",
+       "categoria": "mentoria",
+       "totalIniciados": 150,
+       "totalConcluidos": 110,
+       "totalAbandonados": 40,
+       "tempoMedioMinutos": 60,
+       "avaliacaoImplicita": "alta"
+     }
+   ],
+   
+         
+   "mapaDeCalor": [
+     { "pagina": "/home",                    "cliques": 980, "scrollProfundidadeMedia": 65, "areaIgnorada": false },
+     { "pagina": "/mei",                     "cliques": 720, "scrollProfundidadeMedia": 70, "areaIgnorada": false },
+     { "pagina": "/capacitacoes-presenciais","cliques": 540, "scrollProfundidadeMedia": 60, "areaIgnorada": false },
+     { "pagina": "/capacitacoes-online",     "cliques": 630, "scrollProfundidadeMedia": 75, "areaIgnorada": false },
+     { "pagina": "/futuro-empresario",       "cliques": 210, "scrollProfundidadeMedia": 30, "areaIgnorada": false },
+     { "pagina": "/dono-de-pequeno-negocio", "cliques": 180, "scrollProfundidadeMedia": 25, "areaIgnorada": false },
+     { "pagina": "/produtor-rural",          "cliques": 95,  "scrollProfundidadeMedia": 18, "areaIgnorada": true  },
+     { "pagina": "/artesao",                 "cliques": 80,  "scrollProfundidadeMedia": 15, "areaIgnorada": true  },
+     { "pagina": "/educacao-empreendedora",  "cliques": 70,  "scrollProfundidadeMedia": 12, "areaIgnorada": true  },
+     { "pagina": "/meus-cursos",             "cliques": 430, "scrollProfundidadeMedia": 55, "areaIgnorada": false }
+   ]
+  
+}
