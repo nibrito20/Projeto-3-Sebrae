@@ -1,4 +1,8 @@
-package br.edu.cs.projetos3.sebrae.feedback;
+package br.edu.cs.projetos3.sebrae.feedback.execucao;
+
+import br.edu.cs.projetos3.sebrae.feedback.entidades.Servico;
+import br.edu.cs.projetos3.sebrae.feedback.entidades.Usuario;
+import br.edu.cs.projetos3.sebrae.feedback.mediator.SinaisImplicitos;
 
 public class Main {
     public static void main(String[] args) {

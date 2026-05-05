@@ -1,4 +1,4 @@
-package br.edu.cs.projetos3.sebrae.feedback;
+package br.edu.cs.projetos3.sebrae.feedback.entidades;
 
 public class Usuario {
 	private int id;
@@ -13,6 +13,7 @@ public class Usuario {
         this.tempoMedioSessaoMinutos = tempoMedioSessaoMinutos;
     }
 
+    public int getId() { return id; }
     public String getNome() { return nome; }
     public int getDiasDesdeUltimoAcesso() { return diasDesdeUltimoAcesso; }
     public int getTempoMedioSessaoMinutos() { return tempoMedioSessaoMinutos; }

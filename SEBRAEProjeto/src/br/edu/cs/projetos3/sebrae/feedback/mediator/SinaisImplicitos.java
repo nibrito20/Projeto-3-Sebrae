@@ -1,4 +1,7 @@
-package br.edu.cs.projetos3.sebrae.feedback;
+package br.edu.cs.projetos3.sebrae.feedback.mediator;
+
+import br.edu.cs.projetos3.sebrae.feedback.entidades.Usuario;
+import br.edu.cs.projetos3.sebrae.feedback.entidades.Servico;
 
 public class SinaisImplicitos {
 

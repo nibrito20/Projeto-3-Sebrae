@@ -1,4 +1,4 @@
-package br.edu.cs.projetos3.sebrae.analiseconclusao;
+package br.edu.cs.projetos3.sebrae.feedback.mediator;
 
 public class UXScoreService {
 

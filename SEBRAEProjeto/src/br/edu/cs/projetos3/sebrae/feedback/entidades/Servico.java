@@ -1,4 +1,4 @@
-package br.edu.cs.projetos3.sebrae.feedback;
+package br.edu.cs.projetos3.sebrae.feedback.entidades;
 
 public class Servico {
 	private int id;
@@ -14,7 +14,8 @@ public class Servico {
         this.totalAbandonados = totalAbandonados;
         this.tempoMedioMinutos = tempoMedioMinutos;
     }
-
+    
+    public int getId() { return id; }
     public String getNome() { return nome; }
     public int getTotalIniciados() { return totalIniciados; }
     public int getTotalAbandonados() { return totalAbandonados; }
