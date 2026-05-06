@@ -5,10 +5,8 @@ import com.sun.net.httpserver.HttpExchange;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.InetSocketAddress;
-
-import br.edu.cs.projetos3.sebrae.feedback.entidades.Usuario;
-import br.edu.cs.projetos3.sebrae.feedback.entidades.Servico;
-import br.edu.cs.projetos3.sebrae.feedback.mediator.SinaisImplicitos;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 public class Servidor {
 
@@ -16,7 +14,7 @@ public class Servidor {
 
         HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
 
-        server.createContext("/api/dados", (HttpExchange exchange) -> {
+        server.createContext("/api/clientes", (HttpExchange exchange) -> {
 
             // Libera CORS para o React
             exchange.getResponseHeaders().add("Access-Control-Allow-Origin", "http://localhost:5173");
@@ -29,19 +27,11 @@ public class Servidor {
                 return;
             }
 
-            // Lógica de negócio
-            SinaisImplicitos analisador = new SinaisImplicitos();
-            Usuario roberto = new Usuario(4, "Roberto Alves", 155, 0);
-            Servico gestao = new Servico(201, "Curso de Gestão Financeira", 500, 280, 45);
-
-            String resultadoUsuario = analisador.analisarEngajamentoUsuario(roberto);
-            String resultadoServico = analisador.analisarEficienciaServico(gestao);
-
-            
-            String resposta = "{" +
-                "\"resultadoUsuario\": \"" + resultadoUsuario + "\"," +
-                "\"resultadoServico\": \"" + resultadoServico + "\"" +
-            "}";
+            // Lê o clients.json da pasta resources
+            String caminho = Paths.get(
+            	    System.getProperty("user.dir"), "src", "resources", "clients.json"
+            	).toString();
+            String resposta = new String(Files.readAllBytes(Paths.get(caminho)), "UTF-8");
 
             byte[] bytes = resposta.getBytes("UTF-8");
             exchange.getResponseHeaders().add("Content-Type", "application/json; charset=UTF-8");
