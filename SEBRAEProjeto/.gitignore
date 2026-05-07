@@ -1,2 +1,22 @@
-/bin/
-/target/
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Java - Compilação e Build
+*.class
+*.log
+*.ctxt
+target/
+build/
+bin/
+
+# IDEs (Eclipse e VS Code)
+.settings/
+.project
+.classpath
+.vscode/
+.nb-conf
+*.swp
