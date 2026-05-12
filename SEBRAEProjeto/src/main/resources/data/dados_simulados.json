@@ -77,7 +77,7 @@
        "nome": "Curso de Marketing Digital",
        "categoria": "curso",
        "totalIniciados": 420,
-       "totalConcluidos": 390,
+       "totalConcluidos": 150,
        "totalAbandonados": 30,
        "tempoMedioMinutos": 38,
        "avaliacaoImplicita": "alta"
@@ -87,7 +87,7 @@
        "nome": "Mentoria Individual",
        "categoria": "mentoria",
        "totalIniciados": 150,
-       "totalConcluidos": 110,
+       "totalConcluidos": 50,
        "totalAbandonados": 40,
        "tempoMedioMinutos": 60,
        "avaliacaoImplicita": "alta"

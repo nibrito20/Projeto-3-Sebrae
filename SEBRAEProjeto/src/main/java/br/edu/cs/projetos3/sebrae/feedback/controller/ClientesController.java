@@ -18,4 +18,9 @@ public class ClientesController {
     public ResponseEntity<String> getClientes() {
         return clientesService.getClientes();
     }
+    
+    @GetMapping("/dados-completos")
+    public ResponseEntity<String> getDadosCompletos() {
+        return clientesService.getDadosSimulados();
+    }
 }

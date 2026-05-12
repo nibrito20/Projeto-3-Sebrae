@@ -22,4 +22,20 @@ public class ClientesService {
                     .body("{\"erro\": \"Erro ao carregar clientes.\"}");
         }
     }
+    
+ 
+    public ResponseEntity<String> getDadosSimulados() {
+        try {
+            // Lógica correta para ler da pasta resources
+            ClassPathResource resource = new ClassPathResource("data/dados_simulados.json");
+            String content = new String(resource.getInputStream().readAllBytes(), StandardCharsets.UTF_8);
+            return ResponseEntity.ok()
+                    .contentType(MediaType.APPLICATION_JSON)
+                    .body(content);
+        } catch (IOException e) {
+            // Retorna um JSON de erro para o React não quebrar
+            return ResponseEntity.internalServerError()
+                    .body("{\"error\": \"Erro ao ler dados_simulados.json\"}");
+        }
+    }
 }
