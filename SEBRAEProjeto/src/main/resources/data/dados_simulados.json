@@ -60,7 +60,15 @@
        "totalConcluidos": 220,
        "totalAbandonados": 280,
        "tempoMedioMinutos": 45,
-       "avaliacaoImplicita": "media"
+       "avaliacaoImplicita": "media",
+	   "tempoMedioEtapa": "15min",
+	   "dispositivos": ["Mobile (iPhone)", "Desktop (Chrome)"],
+       "origensTrafego": ["Busca Orgânica", "Instagram"],
+	   "ultimosUsuarios": [
+	         { "id": "235980", "data": "24/08/26" },
+	         { "id": "235643", "data": "19/08/26" }
+	    ],
+	    "gargalo": "Etapa 2"
      },
      {
        "id": 202,
@@ -70,7 +78,15 @@
        "totalConcluidos": 80,
        "totalAbandonados": 220,
        "tempoMedioMinutos": 30,
-       "avaliacaoImplicita": "baixa"
+       "avaliacaoImplicita": "baixa",
+	   "tempoMedioEtapa": "22min",
+	   "dispositivos": ["Desktop (Chrome)", "Mobile (Android)"],
+       "origensTrafego": ["Email Marketing", "LinkedIn"],
+	   "ultimosUsuarios": [
+	         { "id": "198321", "data": "20/08/26" },
+	         { "id": "197654", "data": "15/08/26" }
+	    ],
+	    "gargalo": "Etapa 1"
      },
      {
        "id": 203,
@@ -80,7 +96,15 @@
        "totalConcluidos": 150,
        "totalAbandonados": 30,
        "tempoMedioMinutos": 38,
-       "avaliacaoImplicita": "alta"
+       "avaliacaoImplicita": "alta",
+	   "tempoMedioEtapa": "10min",
+	   "dispositivos": ["Mobile (Android)", "Desktop (Chrome)"],
+       "origensTrafego": ["Instagram", "YouTube"],
+	   "ultimosUsuarios": [
+	         { "id": "312456", "data": "23/08/26" },
+	         { "id": "311987", "data": "22/08/26" }
+	    ],
+	    "gargalo": "Etapa 3"
      },
      {
        "id": 204,
@@ -90,7 +114,15 @@
        "totalConcluidos": 50,
        "totalAbandonados": 40,
        "tempoMedioMinutos": 60,
-       "avaliacaoImplicita": "alta"
+       "avaliacaoImplicita": "alta",
+	   "tempoMedioEtapa": "30min",
+	   "dispositivos": ["Desktop (Safari)", "Mobile (iPhone)"],
+	   "origensTrafego": ["Indicação", "Busca Orgânica"],
+	   "ultimosUsuarios": [
+	         { "id": "401123", "data": "21/08/26" },
+	         { "id": "400876", "data": "18/08/26" }
+	   ],
+	   "gargalo": "Conclusão"
      }
    ],
    
