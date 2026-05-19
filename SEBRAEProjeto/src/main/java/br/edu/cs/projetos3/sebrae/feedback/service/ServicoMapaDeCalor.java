@@ -1,56 +1,72 @@
 package br.edu.cs.projetos3.sebrae.feedback.service;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Random;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import br.edu.cs.projetos3.sebrae.feedback.entidades.MapaDeCalorGrid;
-import br.edu.cs.projetos3.sebrae.feedback.repository.MapaDeCalorInterfaceRepo;
 
 @Service
 public class ServicoMapaDeCalor {
 
-	private static final int CELL_SIZE = 50;
-	
-	@Autowired
-	
-	private MapaDeCalorInterfaceRepo repo;
-	
-	public void registerClick(
-            String page,
-            Integer x,
-            Integer y
-    ) {
+    public List<MapaDeCalorGrid> getMapaDeCalor(String page) {
+        Map<String, MapaDeCalorGrid> mapaPontos = new HashMap<>();
+        long proximoId = 1;
 
-        int gridX = x / CELL_SIZE;
-        int gridY = y / CELL_SIZE;
+        long semente = (page != null) ? page.hashCode() : 12345L;
+        Random rand = new Random(semente);
 
-        MapaDeCalorGrid cell = repo.acharPagEGridXEGridY(page, gridX, gridY).orElseGet(() -> { 
-                	
-                	MapaDeCalorGrid g = new MapaDeCalorGrid();
-                    g.setPage(page);
-                    g.setGridX(gridX);
-                    g.setGridY(gridY);
-                    g.setTotalClicks(0L);
-                    g.setTotalMoves(0L);
+        int qtdEpicentros = 55 + rand.nextInt(20); 
 
-                    return g;
-         });
+        for (int i = 0; i < qtdEpicentros; i++) {
+            
+            int centroX = 8 + rand.nextInt(22);   
+            int centroY = rand.nextInt(220);  
 
-        cell.setTotalClicks(
-                cell.getTotalClicks() + 1
-        );
+            int intensidadeBase = 50 + rand.nextInt(45); 
 
-        repo.save(cell);
-	
-	}
-	
-	public List<MapaDeCalorGrid> getMapaDeCalor(String page){
-		return repo.acharPag(page);
-	}
-	
-	
-	
-	
+            for (int dx = -3; dx <= 3; dx++) {
+                for (int dy = -3; dy <= 3; dy++) {
+                    int x = centroX + dx;
+                    int y = centroY + dy;
+
+                    if (x < 0 || x > 50 || y < 0 || y > 220) continue; 
+
+                    int distancia = Math.abs(dx) + Math.abs(dy);
+                    long cliquesDestePonto = 0;
+
+                    if (distancia == 0) {
+                        cliquesDestePonto = intensidadeBase;                
+                    } else if (distancia == 1) {
+                        cliquesDestePonto = (long) (intensidadeBase * 0.5); 
+                    } else {
+                        cliquesDestePonto = (long) (intensidadeBase * 0.15); 
+                    }
+
+                    if (cliquesDestePonto < 4) continue;
+
+                    String chave = x + "-" + y;
+                    MapaDeCalorGrid pontoAtual = mapaPontos.get(chave);
+
+                    if (pontoAtual == null) {
+                        pontoAtual = new MapaDeCalorGrid();
+                        pontoAtual.setId(proximoId++);
+                        pontoAtual.setPage(page);
+                        pontoAtual.setGridX(x);
+                        pontoAtual.setGridY(y);
+                        pontoAtual.setTotalClicks(cliquesDestePonto);
+                        pontoAtual.setTotalMoves(cliquesDestePonto * 3);
+                        mapaPontos.put(chave, pontoAtual);
+                    } else {
+                        pontoAtual.setTotalClicks(pontoAtual.getTotalClicks() + cliquesDestePonto);
+                    }
+                }
+            }
+        }
+
+        return new ArrayList<>(mapaPontos.values());
+    }
 }

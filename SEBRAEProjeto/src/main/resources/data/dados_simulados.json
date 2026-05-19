@@ -124,20 +124,6 @@
 	   ],
 	   "gargalo": "Conclusão"
      }
-   ],
-   
-         
-   "mapaDeCalor": [
-     { "pagina": "/home",                    "cliques": 980, "scrollProfundidadeMedia": 65, "areaIgnorada": false },
-     { "pagina": "/mei",                     "cliques": 720, "scrollProfundidadeMedia": 70, "areaIgnorada": false },
-     { "pagina": "/capacitacoes-presenciais","cliques": 540, "scrollProfundidadeMedia": 60, "areaIgnorada": false },
-     { "pagina": "/capacitacoes-online",     "cliques": 630, "scrollProfundidadeMedia": 75, "areaIgnorada": false },
-     { "pagina": "/futuro-empresario",       "cliques": 210, "scrollProfundidadeMedia": 30, "areaIgnorada": false },
-     { "pagina": "/dono-de-pequeno-negocio", "cliques": 180, "scrollProfundidadeMedia": 25, "areaIgnorada": false },
-     { "pagina": "/produtor-rural",          "cliques": 95,  "scrollProfundidadeMedia": 18, "areaIgnorada": true  },
-     { "pagina": "/artesao",                 "cliques": 80,  "scrollProfundidadeMedia": 15, "areaIgnorada": true  },
-     { "pagina": "/educacao-empreendedora",  "cliques": 70,  "scrollProfundidadeMedia": 12, "areaIgnorada": true  },
-     { "pagina": "/meus-cursos",             "cliques": 430, "scrollProfundidadeMedia": 55, "areaIgnorada": false }
    ]
   
 }
