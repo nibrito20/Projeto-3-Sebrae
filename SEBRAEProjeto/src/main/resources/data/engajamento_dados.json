@@ -1,0 +1,20 @@
+[
+  {
+    "clienteId": 1,
+    "frequencia": 8.5,
+    "profundidade": 7.0,
+    "reuso": 9.0
+  },
+  {
+    "clienteId": 2,
+    "frequencia": 4.0,
+    "profundidade": 3.5,
+    "reuso": 2.0
+  },
+  {
+    "clienteId": 3,
+    "frequencia": 6.5,
+    "profundidade": 8.0,
+    "reuso": 5.5
+  }
+]
