@@ -1,0 +1,26 @@
+[
+  {
+    "clienteId": 1,
+    "currentStreak": 5,
+    "longestStreak": 14,
+    "lastLoginDate": "2026-05-20",
+    "loginHistory": [
+      "2026-05-16",
+      "2026-05-17",
+      "2026-05-18",
+      "2026-05-19",
+      "2026-05-20"
+    ]
+  },
+  {
+    "clienteId": 2,
+    "currentStreak": 1,
+    "longestStreak": 3,
+    "lastLoginDate": "2026-05-10",
+    "loginHistory": [
+      "2026-05-08",
+      "2026-05-09",
+      "2026-05-10"
+    ]
+  }
+]
