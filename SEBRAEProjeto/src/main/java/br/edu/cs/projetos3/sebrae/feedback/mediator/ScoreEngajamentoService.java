@@ -21,6 +21,7 @@ public class ScoreEngajamentoService {
         List<EngajamentoDTO> listaCustomizada = new ArrayList<>();
 
         for (Map<String, Object> dado : dadosBrutos) {
+            String clienteId = dado.get("clienteId") != null ? dado.get("clienteId").toString() : "";
             double frequencia = ((Number) dado.get("frequencia")).doubleValue();
             double profundidade = ((Number) dado.get("profundidade")).doubleValue();
             double reuso = ((Number) dado.get("reuso")).doubleValue();
@@ -29,7 +30,7 @@ public class ScoreEngajamentoService {
             
             String nivel = classificarNivel(scoreFinal);
 
-            listaCustomizada.add(new EngajamentoDTO(scoreFinal, nivel, frequencia, profundidade, reuso));
+            listaCustomizada.add(new EngajamentoDTO(clienteId, scoreFinal, nivel, frequencia, profundidade, reuso));
         }
 
         return listaCustomizada.stream()

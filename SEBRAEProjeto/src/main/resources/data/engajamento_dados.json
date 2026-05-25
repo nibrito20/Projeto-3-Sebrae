@@ -1,20 +1,32 @@
 [
   {
-    "clienteId": 1,
-    "frequencia": 8.5,
-    "profundidade": 7.0,
-    "reuso": 9.0
+    "clienteId": "c-011",
+    "frequencia": 9.5,
+    "profundidade": 8.8,
+    "reuso": 9.1
   },
   {
-    "clienteId": 2,
-    "frequencia": 4.0,
-    "profundidade": 3.5,
-    "reuso": 2.0
+    "clienteId": "c-012",
+    "frequencia": 9.0,
+    "profundidade": 8.4,
+    "reuso": 8.9
   },
   {
-    "clienteId": 3,
-    "frequencia": 6.5,
-    "profundidade": 8.0,
-    "reuso": 5.5
+    "clienteId": "c-013",
+    "frequencia": 8.6,
+    "profundidade": 7.9,
+    "reuso": 8.8
+  },
+  {
+    "clienteId": "c-014",
+    "frequencia": 5.2,
+    "profundidade": 5.0,
+    "reuso": 4.8
+  },
+  {
+    "clienteId": "c-015",
+    "frequencia": 6.7,
+    "profundidade": 6.2,
+    "reuso": 5.9
   }
 ]

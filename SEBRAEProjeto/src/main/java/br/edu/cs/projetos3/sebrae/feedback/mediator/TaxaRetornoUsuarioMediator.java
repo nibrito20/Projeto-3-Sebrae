@@ -2,7 +2,9 @@ package br.edu.cs.projetos3.sebrae.feedback.mediator;
 
 import br.edu.cs.projetos3.sebrae.feedback.service.TaxaRetornoUsuarioService;
 import br.edu.cs.projetos3.sebrae.feedback.entidades.TaxaRetornoUsuario;
+import org.springframework.stereotype.Service;
 
+@Service
 public class TaxaRetornoUsuarioMediator {
 
 	    private final TaxaRetornoUsuarioService service;

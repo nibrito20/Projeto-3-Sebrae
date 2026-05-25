@@ -4,7 +4,9 @@ import br.edu.cs.projetos3.sebrae.feedback.entidades.TaxaRetornoUsuario;
 import br.edu.cs.projetos3.sebrae.feedback.repository.TaxaRetornoUsuarioRepository;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
+import org.springframework.stereotype.Service;
 
+@Service
 public class TaxaRetornoUsuarioService {
 
 	    private final TaxaRetornoUsuarioRepository repository;

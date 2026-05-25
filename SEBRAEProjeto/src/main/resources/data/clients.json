@@ -205,39 +205,87 @@
     },
     {
       "id": "c-011",
-      "nome": "Pet Shop AmiCão",
+      "nome": "João Álvaro Lima",
       "cnpj": "11.222.333/0001-44",
       "lastAccessDate": "2026-05-03",
-      "loginCountLast30d": 9,
+      "loginCountLast30d": 10,
       "worstTask": {
-        "id": "matricula-curso",
-        "label": "Matrícula em Curso",
-        "userMinutes": 6
+        "id": "cadastro-cnpj",
+        "label": "Cadastro de CNPJ",
+        "userMinutes": 12
       },
       "timeline": [
-        { "type": "neutral", "date": "2026-05-03", "title": "Último login", "description": "Sessão de 18min, navegação no catálogo." },
-        { "type": "positive","date": "2026-04-30", "title": "Concluiu curso", "description": "Marketing para Pequenos Negócios — completo." },
-        { "type": "positive","date": "2026-04-22", "title": "Matriculou-se em curso", "description": "Iniciou módulo de Vendas Consultivas." },
-        { "type": "neutral", "date": "2026-04-15", "title": "Login regular", "description": "Sessão produtiva de 40min." },
-        { "type": "positive","date": "2026-04-08", "title": "Concluiu serviço", "description": "Cadastro de CNPJ atualizado em 7min." }
+        { "type": "neutral", "date": "2026-05-03", "title": "Último login", "description": "Sessão de 20min no módulo de cadastro." },
+        { "type": "positive","date": "2026-04-30", "title": "Concluiu curso", "description": "Marketing Digital para Pequenos Negócios." },
+        { "type": "positive","date": "2026-04-22", "title": "Atualizou cadastro", "description": "Dados fiscais sincronizados." }
       ]
     },
     {
       "id": "c-012",
-      "nome": "Marcenaria Lúcio & Filhos",
+      "nome": "Laura Carvalho",
       "cnpj": "22.333.444/0001-55",
       "lastAccessDate": "2026-04-29",
-      "loginCountLast30d": 6,
+      "loginCountLast30d": 9,
       "worstTask": {
         "id": "plano-de-negocios",
         "label": "Plano de Negócios",
-        "userMinutes": 24
+        "userMinutes": 18
       },
       "timeline": [
-        { "type": "neutral", "date": "2026-04-29", "title": "Último login", "description": "Trabalhou no plano de negócios por 24min." },
-        { "type": "neutral", "date": "2026-04-22", "title": "Login regular", "description": "Sessão de 15min, revisão de cadastros." },
-        { "type": "positive","date": "2026-04-12", "title": "Concluiu serviço", "description": "Solicitação de crédito enviada e aprovada." },
-        { "type": "positive","date": "2026-04-02", "title": "Concluiu curso", "description": "Custos e Precificação para Indústria." }
+        { "type": "neutral", "date": "2026-04-29", "title": "Último login", "description": "Trabalhou no plano de negócios por 18min." },
+        { "type": "positive","date": "2026-04-22", "title": "Concluiu serviço", "description": "Solicitação de crédito finalizada." },
+        { "type": "positive","date": "2026-04-15", "title": "Concluiu curso", "description": "Gestão Financeira para Empreendedores." }
+      ]
+    },
+    {
+      "id": "c-013",
+      "nome": "Camila Ferreira",
+      "cnpj": "33.444.555/0001-66",
+      "lastAccessDate": "2026-04-30",
+      "loginCountLast30d": 8,
+      "worstTask": {
+        "id": "matricula-curso",
+        "label": "Matrícula em Curso",
+        "userMinutes": 10
+      },
+      "timeline": [
+        { "type": "neutral", "date": "2026-04-30", "title": "Último login", "description": "Matriculou-se em curso e revisou conteúdo." },
+        { "type": "positive","date": "2026-04-24", "title": "Concluiu curso", "description": "Atendimento ao Cliente — módulo básico." },
+        { "type": "positive","date": "2026-04-18", "title": "Login ativo", "description": "Acessou relatórios e simulador." }
+      ]
+    },
+    {
+      "id": "c-014",
+      "nome": "Renata Alves",
+      "cnpj": "44.555.666/0001-77",
+      "lastAccessDate": "2026-04-22",
+      "loginCountLast30d": 4,
+      "worstTask": {
+        "id": "solicitacao-credito",
+        "label": "Solicitação de Crédito",
+        "userMinutes": 30
+      },
+      "timeline": [
+        { "type": "neutral", "date": "2026-04-22", "title": "Último login", "description": "Tentou solicitar crédito e navegou pela proposta." },
+        { "type": "warning","date": "2026-04-16", "title": "Sessão longa", "description": "Demorou em conceitos de garantia." },
+        { "type": "positive","date": "2026-04-10", "title": "Concluiu curso", "description": "Planejamento Financeiro Pessoal." }
+      ]
+    },
+    {
+      "id": "c-015",
+      "nome": "Thiago Moura",
+      "cnpj": "55.666.777/0001-88",
+      "lastAccessDate": "2026-04-25",
+      "loginCountLast30d": 5,
+      "worstTask": {
+        "id": "plano-de-negocios",
+        "label": "Plano de Negócios",
+        "userMinutes": 22
+      },
+      "timeline": [
+        { "type": "neutral", "date": "2026-04-25", "title": "Último login", "description": "Revisou o plano de negócios e salvou alterações." },
+        { "type": "neutral","date": "2026-04-19", "title": "Sessão de análise", "description": "Consultou indicadores de mercado." },
+        { "type": "positive","date": "2026-04-12", "title": "Concluiu curso", "description": "Marketing Digital para Pequenos Negócios." }
       ]
     }
   ]
