@@ -3,7 +3,6 @@
 > Projeto desenvolvido para o SEBRAE com o objetivo de medir a satisfação do cliente **sem a necessidade de perguntas diretas**, utilizando análise de comportamento dentro de uma plataforma digital.
 
 <br/>
-<br/>
 
 ## 🔗 Repositórios do Projeto
 
