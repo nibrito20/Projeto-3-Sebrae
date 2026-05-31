@@ -36,7 +36,8 @@ Criar um sistema que permita:
 
 ### Mapa de Calor de Interações
 - Rastreia cliques, rolagens e áreas ignoradas
-- Visualização com cores: 🔴 Alta · 🟡 Média · 🟢 Baixa interação
+- Visualização com cores:
+      🔴 Alta · 🟡 Média · 🟢 Baixa interação
 - Identifica pontos de interesse e desinteresse
 
 ### Detector de Abandono Inteligente
