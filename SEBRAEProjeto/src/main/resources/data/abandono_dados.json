@@ -1,0 +1,26 @@
+[
+  {
+    "paginaFluxo": "Pagamento/Checkout",
+    "totalEntradas": 1000,
+    "totalAbandonos": 650,
+    "periodo": "Maio/2026",
+    "tipoUsuario": "Novo",
+    "canal": "Mobile"
+  },
+  {
+    "paginaFluxo": "Cadastro Inicial",
+    "totalEntradas": 2500,
+    "totalAbandonos": 750,
+    "periodo": "Maio/2026",
+    "tipoUsuario": "Visitante",
+    "canal": "Web"
+  },
+  {
+    "paginaFluxo": "Pagina Inicial (Home)",
+    "totalEntradas": 5000,
+    "totalAbandonos": 250,
+    "periodo": "Maio/2026",
+    "tipoUsuario": "Recorrente",
+    "canal": "Web"
+  }
+]
