@@ -1,6 +1,5 @@
 package br.edu.cs.projetos3.sebrae.feedback.repository;
 
-package br.edu.cs.projetos3.sebrae.feedback.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
