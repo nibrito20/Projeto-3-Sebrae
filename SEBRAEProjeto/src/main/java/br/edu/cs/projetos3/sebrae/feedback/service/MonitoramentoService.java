@@ -8,10 +8,19 @@ import org.springframework.stereotype.Service;
 
 import br.edu.cs.projetos3.sebrae.feedback.controller.EstatisticasUtil;
 import br.edu.cs.projetos3.sebrae.feedback.entidades.Alerta;
+import br.edu.cs.projetos3.sebrae.feedback.repository.AlertaRepository;
 
 @Service
 public class MonitoramentoService {
 
+	
+	private final AlertaRepository alertaRepository;
+
+    public MonitoramentoService(AlertaRepository alertaRepository) {
+        this.alertaRepository = alertaRepository;
+    }
+	
+	
     public Optional<Alerta> analisar(
             double valorAtual,
             List<Double> historico) {
@@ -42,6 +51,8 @@ public class MonitoramentoService {
         alerta.setDescricao(
                 "Comportamento atípico detectado.");
 
+        alertaRepository.save(alerta);
+        
         return Optional.of(alerta);
     }
     
