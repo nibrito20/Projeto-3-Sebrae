@@ -4,6 +4,11 @@ import org.springframework.web.bind.annotation.*;
 
 import br.edu.cs.projetos3.sebrae.feedback.service.MonitoramentoService;
 
+import br.edu.cs.projetos3.sebrae.feedback.entidades.Alerta;
+
+import java.util.List;
+
+@CrossOrigin(origins = "http://localhost:5173")
 @RestController
 @RequestMapping("/monitoramento")
 public class MonitoramentoController {
@@ -21,5 +26,10 @@ public class MonitoramentoController {
                 request.getValorAtual(),
                 request.getHistorico()
         );
+    }
+
+    @GetMapping("/alertas")
+    public List<Alerta> listarAlertas() {
+        return monitoramentoService.listarAlertas();
     }
 }

@@ -55,6 +55,10 @@ public class MonitoramentoService {
         
         return Optional.of(alerta);
     }
+
+    public List<Alerta> listarAlertas() {
+        return alertaRepository.findAll();
+    }
     
     
     
